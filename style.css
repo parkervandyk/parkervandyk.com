@@ -1,52 +1,25 @@
-#whole {
-margin-left: auto;
-margin-right: auto;
-max-width: 1000px;
-}
-
-#head {
-margin-left: auto;
-margin-right: auto;
-color: white;
-font-size: x-large;
-}
-
-#menu {
-margin-left: auto;
-margin-right: auto;
-max-width: 500px;
-background-color: gray;
-border-radius: 20px;
-}
-
-
-#button {
-text-align: center;
-margin-bottom: 0px;
-padding: 0px;
-font-size: 16pt;
-font-variant: small-caps;
-}
-
-#bodytext {
-margin-left: auto;
-margin-right: auto;
-max-width: 1000px;
-background-color: black;
-color: white;
-font-size: 14pt;
-border-radius: 20px;
-}
-
-#h2 {
-color: red;
-margin-right: auto;
-margin-left: auto;
-font-size: 14pt;
-}
-
-p {
-padding-left: 30px;
-padding-right: 30px;
-padding-bottom: 20px;
-}
+body {
+  margin: 0px;
+  background-color: black;
+  font-family: Helvetica Neue, Helvetica;
+  color: white; }
+  body a {
+    color: orange;
+    text-decoration: none; }
+    body a:hover {
+      color: yellow; }
+  body .content {
+    background:url(../images/stars.jpg) no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover; }
+    body .content h1 {
+      font-weight: normal;
+      padding: 25px 0 0;
+      margin: 0px;
+      font-size: 130px; }
+    body .content p {
+      font-size: 17px;
+      margin: 5px 0 10px 10px;
+      padding: 0px; }
