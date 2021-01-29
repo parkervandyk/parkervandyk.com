@@ -1,7 +1,7 @@
 body {
   margin: 0px;
-  /* background-color: black; */
-  background:url(../images/stars.jpg) no-repeat center center fixed;
+  background-color: black;
+  /* background:url(../images/stars.jpg) no-repeat center center fixed; */
   font-family: Helvetica Neue, Helvetica;
   color: white; }
   body a {
