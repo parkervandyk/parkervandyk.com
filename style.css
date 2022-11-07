@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   background-color: black;
-  font-family: Helvetica Neue, Helvetica;
+  font-family: system-ui;
   color: white;
 }
 body a {
@@ -12,7 +12,6 @@ body a:hover {
   color: yellow;
 }
 body .content {
-  /* background: url('../images/stars.png') no-repeat top right; */
   height: 1398px;
   width: 1600px;
   margin: 0 0 0 auto;
