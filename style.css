@@ -5,6 +5,40 @@ body {
   color: white;
 }
 
+header {
+  background-color: rgba(40, 42, 54, 1) !important;
+  padding: 10px 0;
+}
+
+.nav-container {
+  width: 1600px; /* Match this to the width of your .content */
+  margin: auto; /* Centers the container */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensures the nav items are aligned horizontally */
+  justify-content: center; /* Centers the nav items within the container */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: rgba(40, 42, 54, 1) !important;
+  border-radius: 4px;
+}
+
 body a {
   color: orange;
   text-decoration: none;
