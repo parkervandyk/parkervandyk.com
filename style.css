@@ -1,36 +1,44 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #f8f8f2;
   margin: 0;
   padding: 0;
+  background-color: #44475a;
 }
 
 .container {
-  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #44475a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 header {
   text-align: center;
   margin-bottom: 30px;
+  background-color: #44475a;
+  padding: 10px;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
+  color: #50fa7b;
 }
 
 section {
   margin-bottom: 30px;
+  padding: 15px;
+  background-color: #44475a;
 }
 
 a {
-  color: #0077cc;
+  color: #8be9fd;
   text-decoration: none;
 }
 
 a:hover {
+  color: #ff79c6;
   text-decoration: underline;
 }
 
