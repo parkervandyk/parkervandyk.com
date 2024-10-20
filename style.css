@@ -1,68 +1,56 @@
 body {
-  margin: 0px;
-  background-color: rgba(40, 42, 54, 1) !important;
-  font-family: system-ui;
-  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header {
-  background-color: rgba(40, 42, 54, 1) !important;
-  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.nav-container {
-  width: 1600px; /* Match this to the width of your .content */
-  margin: auto; /* Centers the container */
+h1 {
+  font-size: 2.5em;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* Ensures the nav items are aligned horizontally */
-  justify-content: center; /* Centers the nav items within the container */
+section {
+  margin-bottom: 30px;
 }
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 15px;
-  display: block;
-}
-
-nav ul li a:hover {
-  background-color: rgba(40, 42, 54, 1) !important;
-  border-radius: 4px;
-}
-
-body a {
-  color: orange;
+a {
+  color: #0077cc;
   text-decoration: none;
 }
 
-body a:hover {
-  color: yellow;
+a:hover {
+  text-decoration: underline;
 }
 
-body .content {
-  height: 1398px;
-  width: 1600px;
-  margin: auto;
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
 }
 
-body .content h1 {
-  font-weight: normal;
-  padding: 25px 0 0;
-  margin: 0px;
-  font-size: 120px;
-}
-
-body .content p {
-  font-size: 20px;
-  margin: 5px 0 10px 10px;
-  padding: 0px;
+@media screen and (min-width: 601px) {
+  p {
+    text-align: center;
+  }
 }
