@@ -62,3 +62,21 @@ a:hover {
     text-align: center;
   }
 }
+
+.portfolio-button {
+  display: inline-block;
+  background-color: #50fa7b;
+  color: #282a36;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+}
+
+.portfolio-button:hover {
+  background-color: #8be9fd;
+  color: #282a36;
+  text-decoration: none;
+}
