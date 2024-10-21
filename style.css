@@ -80,3 +80,11 @@ a:hover {
   color: #282a36;
   text-decoration: none;
 }
+
+#resume-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #44475a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
