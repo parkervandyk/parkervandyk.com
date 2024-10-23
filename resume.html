@@ -11,20 +11,189 @@
   <body>
     <header>
       <nav>
-        <a href="index.html" target="_blank" class="portfolio-button">Home</a>
+        <div class="logo">Parker Van Dyk</div>
+        <ul class="menu">
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li class="dropdown">
+            <a href="#photography">Photography</a>
+            <ul class="dropdown-content">
+              <li>
+                <a
+                  href="https://parkervandykphotography.pixieset.com/bw-film-portfolio/"
+                  target="_blank"
+                  >Film Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://parkervandykphotography.pixieset.com/digital-portfolio/"
+                  target="_blank"
+                  >Digital Portfolio</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main id="resume-content"></main>
+
+    <main>
+      <section id="resume">
+        <h1>Professional Experience</h1>
+        <h3>Procore Technologies</h3>
+        <p><strong>Integration Engineer</strong> | Nov. 2023 - Present</p>
+        <ul>
+          <li>
+            As an Integration Engineer on the Technical Services team, I serve
+            as the primary engineer on integration projects, managing
+            integrations, and other technical services we offer to our
+            customers.
+          </li>
+          <li>
+            Develop, deploy, and maintain integration processes between
+            Procore's REST API and client applications using the iPaaS tool
+            Boomi.
+          </li>
+          <li>
+            Analyze integration requirements and perform gap analysis; craft and
+            manage technical design documents.
+          </li>
+          <li>
+            Communicate and collaborate effectively with clients, technical
+            peers, and business users to scope and deliver client projects.
+          </li>
+        </ul>
+
+        <h3>Hitch</h3>
+        <p><strong>Software Engineer</strong> | Apr. 2023 - Sep. 2023</p>
+        <ul>
+          <li>
+            Hitch is the leading city-to-city rideshare app for long-distance
+            travel
+          </li>
+          <li>
+            Work with a small team of designers and engineers to design and
+            implement improvements across the app
+          </li>
+          <li>
+            Built a real-time selfie verification service for safety and
+            security for both drivers and riders
+          </li>
+          <li>
+            Migrated multiple systems from our old backend to new and improved
+            backend
+          </li>
+          <li>
+            Restructured our Agile workflow and implemented exercises to create
+            more efficient and streamlined product decisions
+          </li>
+        </ul>
+
+        <h3>Unity Technologies</h3>
+        <p><strong>Software Engineer</strong> | Sep. 2020 - Mar. 2023</p>
+        <ul>
+          <li>
+            As an engineer on the Integration Layer Team, I was responsible for
+            designing, developing, and implementing highly scalable technical
+            solutions utilizing purpose built microservices in Node.js and
+            Mulesoft
+          </li>
+          <li>
+            Designed and led the implementation of an end-to-end production
+            service to ingest 250k+ records of non-standard earnings data into
+            Salesforce each month resulting in clear visibility of ad revenue
+          </li>
+          <li>
+            Built services and APIs for enterprise systems such as Workday,
+            Salesforce, and Zuora which streamlined cross-functional
+            collaboration with teams, such as Finance, Sales, and HR
+          </li>
+          <li>
+            Worked closely with our Product Manager to implement new Agile
+            practices to increase productivity
+          </li>
+        </ul>
+
+        <h3>SmileDirectClub</h3>
+        <p>
+          <strong>Systems Integration Engineer</strong> | Apr. 2018 - Sep. 2020
+        </p>
+        <ul>
+          <li>
+            Implemented, maintained, and supported multiple EDI integrations for
+            various retail partners and 3PL firms utilizing Dell Boomi and
+            custom scripting
+          </li>
+          <li>
+            Developed, improved, and re-architected the end-to-end Sales Order
+            and Supply Chain data process
+          </li>
+          <li>
+            Management, translation, and analysis of data ERP, CRM, and HRIS
+            systems, acted as Product Manager to facilitate defining scope
+          </li>
+          <li>
+            Jira systems engineer building and implementing all Jira
+            functionality throughout the enterprise
+          </li>
+          <li>
+            Initially started at SmileDirectClub as a Project Manager
+            implementing a company wide PMO for adoption of agile methodologies
+            throughout the company
+          </li>
+        </ul>
+
+        <h3>Croft & Associates</h3>
+        <p>
+          <strong>IT Manager/Project Specialist</strong> | Apr. 2016 - Mar. 2018
+        </p>
+        <ul>
+          <li>
+            Designed, delivered, managed, and improved the way information
+            technology is used internally throughout the business, implementing
+            new and updated IT systems including infrastructure, hardware, and
+            SaaS
+          </li>
+        </ul>
+
+        <h2>Education</h2>
+        <h3>University of Alabama</h3>
+        <p><ul><li>Management Information Systems</li></ul>
+        </p>
+
+        <h2>Skills</h2>
+        <ul>
+          <li>Software Development</li>
+          <li>API Integration</li>
+          <li>System Architecture</li>
+          <li>Project Management</li>
+          <li>Team Collaboration</li>
+          <li>TypeScript, Node.js, Express,js, Docker, GitHub, Git, Kubernetes, GCP, AWS, PostgreSQL, Kibana, Terraform, Jenkins, Nest.js, MongoDB, Mulesoft, Boomi, Jira, Agile, Scrum</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:parker@parkervandyk.com">parker@parkervandyk.com</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/parkervandyk/" target="_blank"
+            >parkervandyk</a
+          >
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/parkervandyk" target="_blank"
+            >parkervandyk</a
+          >
+        </p>
+      </section>
+    </main>
+
     <footer>
       <p>&copy; 2023 Parker Van Dyk. All rights reserved.</p>
     </footer>
-    <script>
-      fetch('/Parker_VanDyk_Resume.md')
-        .then((response) => response.text())
-        .then((markdown) => {
-          document.getElementById('resume-content').innerHTML =
-            marked.parse(markdown)
-        })
-    </script>
   </body>
 </html>
