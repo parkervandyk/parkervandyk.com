@@ -5,13 +5,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: rgba(238, 206, 160);
   color: #333;
   line-height: 1.6;
 }
 
 header {
-  background-color: #a8a2a2;
+  background-color: rgba(238, 206, 160);
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -88,7 +88,7 @@ a:hover {
 }
 
 footer {
-  background-color: #a8a2a2;
+  background-color: rgba(238, 206, 160);
   padding: 20px 0;
   text-align: center;
   position: relative;
@@ -108,7 +108,7 @@ footer {
   .dropdown-content {
     position: static;
     display: none;
-    background-color: #f0f0f0;
+    background-color: rgba(238, 206, 160);
     box-shadow: none;
   }
 
