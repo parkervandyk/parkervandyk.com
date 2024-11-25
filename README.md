@@ -24,3 +24,5 @@
 
 [website]: https://parkervandyk.com
 [linkedin]: https://linkedin.com/in/parkervandyk
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/772e45dd-9bca-4682-a912-91c35e591562/deploy-status?branch=master)](https://app.netlify.com/sites/agitated-kirch-725c50/deploys)
