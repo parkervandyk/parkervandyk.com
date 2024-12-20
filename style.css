@@ -1,27 +1,59 @@
+html {
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
+}
+
+:root {
+  --background-color: #111111;
+  --text-color: #ffffff;
+  --hover-color: #888888;
+  --secondary-color: #333333;
+  --transition-speed: 0.3s;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: rgba(238, 206, 160);
-  color: #333;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
   line-height: 1.6;
+  transition: background-color var(--transition-speed);
 }
 
 header {
-  background-color: rgba(238, 206, 160);
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  background-color: rgba(17, 17, 17, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text-color);
+}
+
+nav ul.menu {
+  display: flex;
+  gap: 2rem;
 }
 
 nav ul {
@@ -32,28 +64,82 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin-right: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
+  transition: color var(--transition-speed);
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+nav ul li a:hover {
+  color: var(--hover-color);
+}
+
+.dropdown {
+  position: relative;
+}
+
+nav ul li.dropdown > a {
+  position: relative;
+  padding-right: 1.2em;
+}
+
+nav ul li.dropdown > a::after {
+  content: '▾';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  opacity: 0.7;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  background-color: var(--secondary-color);
+  min-width: 200px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  margin-top: 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+  padding: 0.5rem 0;
+}
+
+.dropdown::after {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content li {
+  display: block;
 }
 
 .dropdown-content a {
-  color: #333;
-  padding: 12px 16px;
-  text-decoration: none;
+  padding: 0.75rem 1rem;
   display: block;
+  white-space: nowrap;
+  border-bottom: none;
+  opacity: 0.9;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-content li:last-child a {
+  border-bottom: none;
 }
 
 .dropdown:hover .dropdown-content {
@@ -63,56 +149,187 @@ nav ul li a {
 main {
   flex: 1;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  padding-bottom: 60px; /* Adjust this value based on your footer height */
+  margin: 8rem auto 4rem;
+  padding: 0 2rem;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
-h1,
-h2,
+h1, h2, h3 {
+  color: var(--text-color);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 h3 {
-  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.9;
 }
 
 a {
-  color: #3498db;
+  color: var(--text-color);
   text-decoration: none;
+  transition: color var(--transition-speed);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0.1em;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--hover-color);
+  text-decoration: none;
+  border-bottom-color: var(--hover-color);
 }
 
 footer {
-  background-color: rgba(238, 206, 160);
-  padding: 20px 0;
+  background-color: var(--background-color);
+  padding: 2rem;
   text-align: center;
-  position: relative;
-  width: 100%;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+::selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Resume Styles */
+.resume-section {
+  max-width: 900px;
+}
+
+.resume-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.resume-section h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.job {
+  margin-bottom: 3rem;
+}
+
+.job h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.job-title {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--hover-color);
+}
+
+.job ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.job ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.education {
+  margin-bottom: 2rem;
+}
+
+.education h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.education p {
+  opacity: 0.9;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list li {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.technologies {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.contact {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.contact p {
+  margin: 0;
 }
 
 @media (max-width: 768px) {
   header {
+    padding: 1rem;
+  }
+  
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  nav ul.menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  main {
+    margin-top: 6rem;
+    padding: 0 1rem;
+  }
+  
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .skills-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .skills-list li {
     text-align: center;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .dropdown-content {
-    position: static;
-    display: none;
-    background-color: rgba(238, 206, 160);
-    box-shadow: none;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
   }
 }
