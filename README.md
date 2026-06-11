@@ -1,6 +1,6 @@
 # Hi there, I'm Parker
 
-## I'm a solutions engineer that loves learning new things
+## I'm a solutions engineer who loves learning new things
 
 ### Connect with me
 
