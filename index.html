@@ -1,108 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Parker Van Dyk</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<div class="logo">Parker Van Dyk</div>
-				<ul class="menu">
-					<li><a href="#about">About</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li class="dropdown">
-						<a href="#photography">Photography</a>
-						<ul class="dropdown-content">
-							<li>
-								<a
-									href="https://parkervandykphotography.pixieset.com/bw-film-portfolio/"
-									target="_blank"
-									>B&W Film Portfolio</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://parkervandykphotography.pixieset.com/medium-format-portfolio/"
-									target="_blank"
-									>Medium Format Film Portfolio</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://parkervandykphotography.pixieset.com/color-film-portfolio/"
-									target="_blank"
-									>Color Film Portfolio</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://parkervandykphotography.pixieset.com/digital-portfolio/"
-									target="_blank"
-									>Digital Portfolio</a
-								>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</header>
 
-		<main>
-			<h2>About</h2>
-			<section id="about">
-				<p>
-					Hey there! My name is Parker Van Dyk and I'm a software engineer and
-					photographer based in Austin, Texas. I grew up in Dallas and went on
-					to study Management Information Systems at the University of Alabama.
-					My career journey took me through Atlanta and Nashville before making
-					my way back to Texas and settling in Austin, where I now live with my beautiful wife and 2 dogs.
-				</p>
-				<p>
-					When I'm not
-					<a href="https://www.linkedin.com/in/parkervandyk/" target="_blank"
-						>working</a
-					>, you'll find me staying active. I'm passionate about
-					<a href="https://www.strava.com/athletes/5768234" target="_blank"
-						>running</a
-					>
-					and occasionally cycling.
-				</p>
-				<p>
-					I write
-					<a href="https://github.com/parkervandyk" target="_blank">code</a> and
-					am always looking to learn new things. Together with two friends, I
-					co-founded
-					<a
-						href="https://www.linkedin.com/company/apptivity-partners"
-						target="_blank"
-						>Apptivity Partners</a
-					>. Our first product,
-					<a href="https://sitefast.live" target="_blank">sitefast</a>, is now
-					live.
-				</p>
-				<h3>Get in Touch</h3>
-				<p>
-					Want to connect?
-					<a
-						href="mailto:parker@parkervandyk.com?subject=Hello from your website!"
-						target="_blank"
-						>Drop me a line</a
-					>. I'd love to hear from you.
-				</p>
-			</section>
-		</main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Parker Van Dyk is a solutions engineer based in Austin, Texas." />
+  <title>Parker Van Dyk</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
 
-		<footer>
-			<p>&copy; 2025 Parker Van Dyk</p>
-		</footer>
-	</body>
+<body>
+  <header>
+    <nav aria-label="Primary navigation">
+      <a class="logo" href="index.html">Parker Van Dyk</a>
+      <ul class="menu">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#photography">Photography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero-content">
+        <p class="eyebrow">Solutions engineer in Austin</p>
+        <h1 id="intro-title">I help teams solve technical problems.</h1>
+        <p class="hero-copy">
+          I work with customers and teams to turn technical requirements into
+          clear, practical solutions.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">See work</a>
+          <a class="button button-secondary" href="#photography">View photos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section section-grid">
+      <div class="section-heading">
+        <p class="eyebrow">Current focus</p>
+        <h2>Engineering that connects the messy parts.</h2>
+      </div>
+      <div class="feature-list">
+        <article class="feature-card">
+          <p class="feature-kicker">Envoy</p>
+          <h3>Solutions engineering</h3>
+          <p>
+            Helping customers connect technical needs with practical product
+            solutions, integrations, and implementation plans.
+          </p>
+        </article>
+        <article class="feature-card">
+          <p class="feature-kicker">SiteFast</p>
+          <h3>No-code websites</h3>
+          <p>
+            Helping people turn structured data into simple websites without
+            needing to write code.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Dallas native, moved around the country a bit and now planted roots in Austin.</h2>
+      </div>
+      <div class="about-copy">
+        <p>
+          I grew up in Dallas, studied Management Information Systems at the
+          University of Alabama, and spent time in Atlanta and Nashville before
+          landing back in Texas.
+        </p>
+        <p>
+          Outside of work, I am usually running, occasionally cycling,
+          shooting film, or spending time with my wife and our two dogs.
+        </p>
+        <div class="inline-links">
+          <a href="https://github.com/parkervandyk" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.strava.com/athletes/5768234" target="_blank" rel="noreferrer">Strava</a>
+          <a href="https://www.linkedin.com/in/parkervandyk/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="photography" class="section photography-section">
+      <div class="section-heading">
+        <p class="eyebrow">Photography</p>
+        <h2>Film and digital portfolios.</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a class="portfolio-card" href="https://parkervandykphotography.pixieset.com/bw-film-portfolio/" target="_blank"
+          rel="noreferrer">
+          <span>B&amp;W Film</span>
+        </a>
+        <a class="portfolio-card" href="https://parkervandykphotography.pixieset.com/medium-format-portfolio/"
+          target="_blank" rel="noreferrer">
+          <span>Medium Format</span>
+        </a>
+        <a class="portfolio-card" href="https://parkervandykphotography.pixieset.com/color-film-portfolio/"
+          target="_blank" rel="noreferrer">
+          <span>Color Film</span>
+        </a>
+        <a class="portfolio-card" href="https://parkervandykphotography.pixieset.com/digital-portfolio/" target="_blank"
+          rel="noreferrer">
+          <span>Digital</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-band">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Want to connect?</h2>
+      </div>
+      <a class="button button-primary" href="mailto:parker@parkervandyk.com?subject=Hello from your website!">
+        Email Parker
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Parker Van Dyk</p>
+  </footer>
+</body>
+
 </html>
