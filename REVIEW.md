@@ -1,7 +1,7 @@
-﻿# Portfolio redesign — local draft
+# Portfolio redesign — local draft
 
 Implemented on branch redesign/editorial-portfolio:
-- Warm paper and olive palette, editorial typography and responsive layouts.
+- Dark charcoal and sage palette, editorial typography and responsive layouts.
 - New introduction, featured Koris project, Envoy experience, gallery links, bio and contact.
 - Local photograph sourced from Parker's linked B&W Pixieset gallery (Chicago skyline).
 - Skip link, visible keyboard focus, reduced-motion support and image dimensions.
