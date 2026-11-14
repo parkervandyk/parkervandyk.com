@@ -1,5 +1,5 @@
 :root {
-  --bg: #0d0d0d;
+  --bg: var(--paper);
   --bg-soft: #111111;
   --card: #181818;
   --card-hover: #202020;
